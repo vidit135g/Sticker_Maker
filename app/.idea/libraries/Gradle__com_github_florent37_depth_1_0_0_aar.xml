@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.florent37:depth:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/depth-1.0.0.aar/7e84a31a53690d3fb3b81bcb14758922/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/depth-1.0.0.aar/7e84a31a53690d3fb3b81bcb14758922/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.florent37/depth/1.0.0/cf8a337efed0aaf6b9396710715a6bc86ee92fbc/depth-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

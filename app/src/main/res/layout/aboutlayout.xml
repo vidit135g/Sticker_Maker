@@ -1,0 +1,85 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    android:layout_margin="12dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/rounded_corner"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/blackicon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/illustration"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:typeface="monospace"
+            android:layout_below="@id/blackicon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/appname"
+            android:textColor="#424242"
+            android:text="Sticker Maker"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="By Sticker Central"
+            android:layout_below="@id/appname"
+            android:layout_centerHorizontal="true"
+            android:typeface="monospace"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/compname"
+            android:textColor="#000"/>
+
+
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:paddingBottom="20dp"-->
+
+            <!--android:layout_height="wrap_content">-->
+            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:orientation="horizontal">&ndash;&gt;-->
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="12sp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:fontFamily="@font/googlefont"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="#000"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="Made in India with"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="14dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="14dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginLeft="2dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:src="@drawable/heart"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+        <!--</RelativeLayout>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:text="Great"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/btnRound"
+        android:textColor="@color/black"
+        android:layout_below="@+id/compname"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_corner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>

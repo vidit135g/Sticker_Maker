@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="preview_side_margin">16dp</dimen>
+    <dimen name="margin_from_tray_to_name">16dp</dimen>
+    <dimen name="sticker_pack_details_image_size">80dp</dimen>
+    <dimen name="sticker_pack_details_image_padding">8dp</dimen>
+    <dimen name="fading_edge_length">8dp</dimen>
+    <dimen name="sticker_pack_list_item_preview_image_size">50dp</dimen>
+    <dimen name="sticker_pack_list_item_preview_image_padding">4dp</dimen>
+    <dimen name="sticker_pack_list_item_row_dot_horizontal_padding">4dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="design_fab_size_normal" tools:ignore="PrivateResource">56dp</dimen>
+    <dimen name="design_fab_size_mini" tools:ignore="PrivateResource">30dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_16">4dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_48">42dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_64">64dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_160">160dp</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../WhatsAppStickers.iml" filepath="$PROJECT_DIR$/../WhatsAppStickers.iml" group="WhatsAppStickers" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="WhatsAppStickers/app" />
+    </modules>
+  </component>
+</project>

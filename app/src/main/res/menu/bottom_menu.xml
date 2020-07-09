@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/support"
+        android:icon="@drawable/like"
+        android:title="Show some support"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/empty"
+        android:title="Options"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:icon="@drawable/options">
+
+        <menu>
+    <item
+            android:id="@+id/share"
+            android:title="Share"
+            android:icon="@drawable/share"
+            app:showAsAction="ifRoom"/>
+    <!--<item
+        android:id="@+id/menu_explore"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_explore_24px"
+        android:title="Explore"
+        app:showAsAction="ifRoom" />-->
+
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/info"
+        android:title="About Us"
+        app:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+
+
+</menu>

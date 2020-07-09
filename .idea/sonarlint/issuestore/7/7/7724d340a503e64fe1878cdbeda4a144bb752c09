@@ -1,0 +1,16 @@
+
+z
+java:S1450"dRemove the "mCheckLicenseListener" field and declare it as a local variable in the relevant methods.(ì¹Ü°
+<
+java:S1659"&Declare "feedback" on a separate line.(¬Éš£
+9
+java:S1659"#Declare "about" on a separate line.(¬Éš£
+}
+java:S1450"bRemove the "mCheckAboutListener" field and declare it as a local variable in the relevant methods.(Œáì—ÿÿÿÿÿ
+€
+java:S1450"eRemove the "mCheckFeedbackListener" field and declare it as a local variable in the relevant methods.(Ôìôñûÿÿÿÿ
+z
+java:S1450"dRemove the "mCheckSharingListener" field and declare it as a local variable in the relevant methods.(ãá¬Ö
+h	java:S100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·†Öâþÿÿÿÿ
+;
+java:S1659"%Declare "license" on a separate line.(¬Éš£

@@ -1,0 +1,12 @@
+
+	java:S116"^Rename this field "CURVE_CIRCLE_RADIUS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï­š’ûÿÿÿÿ8÷Ò¾åŸ.
+J
+java:S11855"(Remove this method to simply inherit it.(æî³Žøÿÿÿÿ8÷Ò¾åŸ.
+x
+java:S1450"bRemove the "mNavigationBarWidth" field and declare it as a local variable in the relevant methods.(Êø’þ
+C
+java:S1170"!Make this final field static too.(Ï­š’ûÿÿÿÿ8÷Ò¾åŸ.
+…
+java:S1450"cRemove the "mNavigationBarHeight" field and declare it as a local variable in the relevant methods.(ô Ÿ´úÿÿÿÿ8÷Ò¾åŸ.
+ä
+java:S1598"ÆThis file "CurvedBottomNavigationView.java" should be located in "com\unusualapps\whatsappstickers\activities" directory, not in "D:\Code\Stickey\whatsapp-sticker-maker-master\WhatsAppStickers\app".(ØÞ•í8ð²¿åŸ.

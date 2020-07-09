@@ -1,0 +1,12 @@
+
+O	java:S106"9Replace this use of System.out or System.err by a logger.(³÷‡µ
+S
+java:S1117˜"<Rename "context" which hides the field declared at line 142.(Ïğ¶¬
+K
+java:S1854~"6Remove this useless assignment to local variable "ex".(Şá
+>
+java:S1185@"(Remove this method to simply inherit it.(ßìê¯
+T
+java:S1117š"8Rename "view" which hides the field declared at line 38.(çÀé„øÿÿÿÿ
+‡
+java:S1319"pThe type of the "uries" object should be an interface such as "List" rather than the implementation "ArrayList".(Ì¥İ

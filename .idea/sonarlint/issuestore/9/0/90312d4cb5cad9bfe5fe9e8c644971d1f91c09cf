@@ -1,0 +1,15 @@
+
+U
+java:S1854”"9Remove this useless assignment to local variable "uries".(¼ü¿Ôùÿÿÿÿ
+F
+java:S1172¯"/Remove this unused method parameter "position".(‚Ö•µ
+G
+java:S16020",Remove useless curly braces around statement(ž¢‹£ûÿÿÿÿ
+P
+java:S3400°"9Remove this method and declare a constant for this value.(”·³›
+?
+java:S1148„"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+I
+java:S1172´"-Remove this unused method parameter "parent".(¨ÿÊÊûÿÿÿÿ
+F
+java:S1172«"/Remove this unused method parameter "position".(›Š«ß

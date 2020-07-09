@@ -1,0 +1,9 @@
+
+>
+java:S1185g"(Remove this method to simply inherit it.(ßìê¯
+B
+java:S1602",Remove useless curly braces around statement(İà®™
+s
+java:S1905"VRemove this unnecessary cast to "org.sonar.java.resolve.Symbols$UnknownType@5a14c65a".(ë”™é8ÄíÕéŸ.
+—
+java:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(“å â
