@@ -9,9 +9,14 @@ android {
         noCompress "webp"
     }
     signingConfigs {
-        signing_config {
-            keyAlias 'abc'
-            keyPassword '123'
+        release {
+            def ks = file("/Users/viditgupta/Documents/Project fix/release.keystore")
+            if (ks.exists()) {
+                storeFile ks
+                storePassword "android123"
+                keyAlias "releaseKey"
+                keyPassword "android123"
+            }
         }
     }
     compileSdkVersion 34
@@ -28,6 +33,7 @@ android {
     }
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
