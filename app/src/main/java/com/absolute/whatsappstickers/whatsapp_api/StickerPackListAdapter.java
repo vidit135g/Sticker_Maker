@@ -89,8 +89,7 @@ public class StickerPackListAdapter extends RecyclerView.Adapter<StickerPackList
             popupMenu.inflate(R.menu.sticker_option_menu);
             popupMenu.setOnMenuItemClickListener(item -> {
 
-                switch (item.getItemId()) {
-                    case R.id.sticker_delete:
+                if (item.getItemId() == R.id.sticker_delete) {
                         new AlertDialog.Builder(context,R.style.DialogTheme)
                                 .setTitle("Deleting")
                                 .setMessage("Are you sure you want to delete this sticker pack?")
@@ -101,10 +100,6 @@ public class StickerPackListAdapter extends RecyclerView.Adapter<StickerPackList
                                 })
                                 .setNegativeButton("No", null)
                                 .show();
-                        break;
-
-                    default:
-                        break;
                 }
                 return false;
             });

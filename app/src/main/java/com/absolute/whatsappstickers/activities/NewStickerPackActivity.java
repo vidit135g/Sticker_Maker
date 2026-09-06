@@ -19,7 +19,6 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.google.gson.Gson;
 import com.sangcomz.fishbun.FishBun;
 import com.sangcomz.fishbun.adapter.image.impl.GlideAdapter;
-import com.sangcomz.fishbun.define.Define;
 import com.absolute.whatsappstickers.R;
 import com.absolute.whatsappstickers.constants.Constants;
 import com.absolute.whatsappstickers.utils.FileUtils;
@@ -153,11 +152,11 @@ public class NewStickerPackActivity extends AppCompatActivity {
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == Define.ALBUM_REQUEST_CODE) {
+        if (requestCode == 27) {
 
             ArrayList<Uri> uries = new ArrayList<>();
             if (resultCode == RESULT_OK) {
-                uries = data.getParcelableArrayListExtra(Define.INTENT_PATH);
+                uries = data.getParcelableArrayListExtra(FishBun.INTENT_PATH);
                 if (uries.size() > 0) {
                     imageAdapter.uries = uries;
                     imageAdapter.notifyDataSetChanged();

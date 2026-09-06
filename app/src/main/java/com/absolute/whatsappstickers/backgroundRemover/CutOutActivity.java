@@ -26,8 +26,8 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import com.alexvasilkov.gestures.views.interfaces.GestureView;
-import com.theartofdev.edmodo.cropper.CropImage;
-import com.theartofdev.edmodo.cropper.CropImageView;
+import com.canhub.cropper.CropImage;
+import com.canhub.cropper.CropImageView;
 import com.absolute.whatsappstickers.R;
 import pl.aprilapps.easyphotopicker.DefaultCallback;
 import pl.aprilapps.easyphotopicker.EasyImage;
@@ -329,7 +329,7 @@ public class CutOutActivity extends AppCompatActivity {
 
             if (resultCode == Activity.RESULT_OK) {
 
-                setDrawViewBitmap(result.getUri());
+                setDrawViewBitmap(result.getUriContent());
 
             } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
                 exitWithError(result.getError());

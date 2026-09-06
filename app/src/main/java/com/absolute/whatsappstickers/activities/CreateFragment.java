@@ -23,7 +23,6 @@ import android.widget.Toast;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.sangcomz.fishbun.FishBun;
 import com.sangcomz.fishbun.adapter.image.impl.GlideAdapter;
-import com.sangcomz.fishbun.define.Define;
 import com.absolute.whatsappstickers.R;
 import com.absolute.whatsappstickers.backgroundRemover.CutOut;
 import com.absolute.whatsappstickers.constants.Constants;
@@ -128,10 +127,10 @@ public class CreateFragment extends Fragment {
                 default:
                     System.out.print("User cancelled the CutOut screen");
             }
-        } else if (requestCode == Define.ALBUM_REQUEST_CODE) {
+        } else if (requestCode == 27) {
             ArrayList<Uri> uries;
             if (resultCode == Activity.RESULT_OK) {
-                uries = data.getParcelableArrayListExtra(Define.INTENT_PATH);
+                uries = data.getParcelableArrayListExtra(FishBun.INTENT_PATH);
                 CutOut.activity().src(uries.get(0)).intro().start(getActivity());
             }
         }
@@ -163,12 +162,8 @@ public class CreateFragment extends Fragment {
                 PopupMenu popupMenu = new PopupMenu(context, imageAdapter.imageView);
                 popupMenu.inflate(R.menu.sticker_menu);
                 popupMenu.setOnMenuItemClickListener(item -> {
-                    switch (item.getItemId()) {
-                        case R.id.delete_sticker:
+                    if (item.getItemId() == R.id.delete_sticker) {
                             this.deleteSticker(index);
-                            break;
-                        default:
-                            break;
                     }
                     return false;
                 });

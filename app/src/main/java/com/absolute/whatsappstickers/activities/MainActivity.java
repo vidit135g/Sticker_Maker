@@ -26,7 +26,6 @@ import android.view.View;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.sangcomz.fishbun.define.Define;
 import com.absolute.whatsappstickers.R;
 import com.absolute.whatsappstickers.backgroundRemover.CutOut;
 import com.absolute.whatsappstickers.identities.StickerPacksContainer;
@@ -80,8 +79,7 @@ public class MainActivity extends AddStickerPackActivity implements CheckRefresh
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.share:
+            if (item.getItemId() == R.id.share) {
                     setFragmento(myStickersFragment);
                     return true;
                 /*case R.id.menu_explore:
@@ -95,7 +93,7 @@ public class MainActivity extends AddStickerPackActivity implements CheckRefresh
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == CutOut.CUTOUT_ACTIVITY_REQUEST_CODE || requestCode == Define.ALBUM_REQUEST_CODE) {
+        if (requestCode == CutOut.CUTOUT_ACTIVITY_REQUEST_CODE || requestCode == 27) {
             Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.frame_principal);
             Objects.requireNonNull(fragment).onActivityResult(requestCode, resultCode, data);
         }
@@ -206,9 +204,7 @@ public class MainActivity extends AddStickerPackActivity implements CheckRefresh
                         rateIntent.setComponent(componentName);
                         this.startActivity(rateIntent);
                         marketFound = true;
-                        break;
-
-                    }
+                        }
                 }
 
                 // if GP not present on device, open web browser
