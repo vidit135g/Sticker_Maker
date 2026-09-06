@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
-                                             android:clickable="true"
-                                             android:focusable="true"
-                                             android:layout_height="wrap_content">
-    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="match_parent"
-                                               android:layout_height="wrap_content"
-                                               android:adjustViewBounds="true"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/white"
+    app:strokeColor="@color/bento_card_stroke"
+    app:strokeWidth="1dp">
 
-                                               android:clickable="true"
-                                               android:focusable="true"
-                                               android:scaleType="centerCrop"
-                                               android:id="@+id/sticker_created_image" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sticker_created_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="centerCrop" />
+</com.google.android.material.card.MaterialCardView>

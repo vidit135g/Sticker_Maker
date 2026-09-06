@@ -51,4 +51,9 @@
     <color name="glpurple">#9575cd</color>
     <color name="gorange">#e64a19</color>
     <color name="glpink">#f48fb1 </color>
+    <!-- Bento UI Tokens -->
+    <color name="bento_bg_canvas">#F2F2F7</color>
+    <color name="bento_card_stroke">#E5E5EA</color>
+    <color name="bento_pill_bg">#EDF4FE</color>
+    <color name="bento_subtext">#8E8E93</color>
 </resources>

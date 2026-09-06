@@ -18,7 +18,9 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/gblue</item>
         <item name="android:fontFamily">@font/googlefont</item>
-        <item name="android:statusBarColor">#ffffff</item>
+        <item name="android:statusBarColor">#F2F2F7</item>
+        <item name="android:windowBackground">@color/bento_bg_canvas</item>
+        <item name="android:colorBackground">@color/bento_bg_canvas</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
 
     </style>
