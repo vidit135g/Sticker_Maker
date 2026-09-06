@@ -156,7 +156,7 @@ public class CutOutActivity extends AppCompatActivity {
     }
 
     private void start() {
-        if (ContextCompat.checkSelfPermission(this,
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R || ContextCompat.checkSelfPermission(this,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
 
             Uri uri = getExtraSource();

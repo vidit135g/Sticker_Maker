@@ -12,6 +12,9 @@ public class RequestPermissionsHelper {
     private static final int CODE_REQUEST_WRITE_READ_EXTERNAL_STORAGE = 0;
 
     public static boolean verifyPermissions(Context context) {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+            return true;
+        }
         int permissionToWriteCheck = ContextCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE);
         int permissionToReadCheck = ContextCompat.checkSelfPermission(context, Manifest.permission.READ_EXTERNAL_STORAGE);
 
@@ -21,6 +24,9 @@ public class RequestPermissionsHelper {
     }
 
     public static void requestPermissions(Activity context) {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+            return;
+        }
         ActivityCompat.requestPermissions(context, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, CODE_REQUEST_WRITE_READ_EXTERNAL_STORAGE);
     }
 }
